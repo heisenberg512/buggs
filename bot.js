@@ -50,8 +50,8 @@ if(!prefixes[message.guild.id]){
   let args = messageArray.slice(1);
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot, message, args);
-
+  if(message.content.indexOf(prefix) !== 0) return;
+  if(commandfile) commandfile.run(bot,message,args);
 
 
 
