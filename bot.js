@@ -33,7 +33,7 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
-});
+
   
  let coins = JSON.parse(fs.readFileSync("./coins.json", "utf8"));
  let prefix = botconfig.prefix;
