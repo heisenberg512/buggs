@@ -41,7 +41,7 @@ bot.on("message", async message => {
 //   prefixes[message.guild.id] = {
 //     prefixes: botconfig.prefix
 //  };
-}
+})
 
 //   let prefix = prefixes[message.guild.id].prefixes;
  let prefix = botconfig.prefix;
