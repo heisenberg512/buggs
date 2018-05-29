@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
   .addField("💰", uCoins)
   .setTimestamp();
 
-message.delete();
+message.delete().catch(O_o => {});
 message.author.send(coinEmbed);
 
 }
