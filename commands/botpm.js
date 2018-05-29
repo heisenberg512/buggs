@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   puser.send(pm);
   puser.send("-----------Don't reply to this message------------");
   message.channel.send("Your message has been sent").then(msg => msg.delete(5000));
-  message.delete();
+  message.delete().catch(O_o => {});
 
 }
 
