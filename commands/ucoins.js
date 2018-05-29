@@ -16,7 +16,7 @@ if(!message.member.roles.has(organizer.id)) return message.channel.send("Permiss
   .setColor(botconfig.orange)
   .setTimestamp();
 
-  message.delete();
+  message.delete().catch(O_o => {});
   message.channel.send(Uembed);
 }
 
