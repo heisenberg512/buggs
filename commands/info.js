@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-
+const bot = new Discord.Client();
 
 module.exports.run = async (bot, message, args) => {
 
@@ -8,7 +8,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Name", bot.user.username)
     .addField("Prefix", "t." )
     .setThumbnail("https://image.ibb.co/bFFFon/bot.png")
-    .addField("Commands", "+[$Commands] to use a command")
+    .addField("Created At", bot.user.createdAt)
+    .addField("Joined At", bot.user.joinedAt)
     .addField("Credits", "created by HeisenBERG#6584")
     .addField("Created on", bot.user.createdAt);
 
