@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 
     let botembed = new Discord.RichEmbed()
     .setColor("#ce0c5a")
-    .setTitle(message.guild.name)
+    .setTitle(`${message.guild.iconURL}`, message.guild.name)
     .setThumbnail(message.guild.iconURL)
     .addField("Created At", message.guild.createdAt)
     .addField("Region", message.guild.region)
