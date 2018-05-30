@@ -11,6 +11,8 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail("https://image.ibb.co/bFFFon/bot.png")
     .addField("Created At", bot.user.createdAt)
     .addField("Joined At", bot.user.joinedAt)
+    .addField("Members", message.guild.memberCount)
+    .addField("Online", message.guild.presenceCount)
     .addField("Credits", "created by HeisenBERG#6584")
     .addField("Created on", bot.user.createdAt);
 
