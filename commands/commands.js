@@ -10,7 +10,8 @@ module.exports.run = async (bot, message, args) => {
   .addField("doggy", "sends random picture of doggy everytime user enters the command")
   .addField("avatar", "t.avatar, +avatar [user] send the avatar of author or the user tagged to channel")
   .addField("info", "displays information about the server.")
-  .addField("stats", "displays the date you joined this server") 
+  .addField("stats", "displays the date you joined this server")
+  .addField("weather", "displays weather forcast of the location entered")
   .setColor(botconfig.green);
 
   message.channel.send(commandEmbed);
