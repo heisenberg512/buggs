@@ -4,7 +4,6 @@ const botconfig = require("../botconfig.json");
 module.exports.run = async (bot, message, args) => {
    let text = args.join(" ");
   if(!args[0]) return message.channel.send("Usage: poll <question>", {code:'py'});
-  let admin = message.guild.roles.find("name", "administrator"):
   if(!message.author.has("ADMINISTRATOR")) return message.channel.send("Permission Denied").then(msg => msg.delete(1000));
    
    let embed = new Discord.RichEmbed()
