@@ -26,6 +26,19 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is now online`);
   bot.user.setActivity("Grand Theft Auto San Andreas");
 });
+bot.on("guildMemberAdd", async (member) => {
+  const guild = member.guild;
+let notify = guild.channels.find("name", "notifications");
+  notify.send(`**Welcome to ${guild.name} Discord server** <@${member.id}> `);
+ 
+});
+
+bot.on("guildMemberRemove", async (member) => {
+  const guild = member.guild;
+let notify = guild.channels.find("name", "notifications");
+  notify.send(`${member.user.username}#${member.user.discriminator} **has left ${guild.name} Discord server** `);
+});
+
 
 bot.on("message", async message => {
   if(message.author.bot) return;
