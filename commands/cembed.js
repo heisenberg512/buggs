@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
  .setTimestamp();
  
  message.channel.send(cembed);
- message.delete().catch(O-o=>{});
+ message.delete().catch(O_o=>{});
 }
 
 module.exports.help = {
