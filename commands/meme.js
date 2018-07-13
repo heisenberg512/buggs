@@ -2,7 +2,7 @@ const Discrod = require("discord.js");
 const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
-   let chance = Match.floor(Math.random() * 10);
+   let chance = Math.floor(Math.random() * 10);
    
    if(chance > 1 && chance < 3){
      message.reply("Your mama is beautiful as always");
